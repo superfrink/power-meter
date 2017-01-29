@@ -4,4 +4,4 @@ main: power-meter.go
 	GOOS=linux GOARCH=arm GOARM=7 go build -o power-meter.pi power-meter.go
 
 clean:
-	rm power-meter.out power-meter.pi
+	rm -f power-meter.out power-meter.pi
