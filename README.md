@@ -19,8 +19,11 @@ FIXME
 Building
 ----------------
 
+Run:
 
 `make`
+
+Generated files:
 
 `power-meter.out` will be the binary for the OS the build is run on.
 
