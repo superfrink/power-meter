@@ -20,9 +20,7 @@ Building
 ----------------
 
 
-```make```
+`make`
 
-```power-meter.out``` will be the binary for the OS the build is run on.
-```power-meter.pi``` will be the binary for Linux on ARM 7.
-
-
+`power-meter.out` will be the binary for the OS the build is run on.
+`power-meter.pi` will be the binary for Linux on ARM 7.
