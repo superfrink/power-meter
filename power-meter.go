@@ -7,16 +7,19 @@ import (
 	"github.com/brian-armstrong/gpio"
 )
 
+const (
+	INPUT_PIN = 27
+)
+
 func main() {
 
 	watcher := gpio.NewWatcher()
-	watcher.AddPin(27)
+	watcher.AddPin(INPUT_PIN)
 	defer watcher.Close()
+	fmt.Printf("watching GPIO%d\n", INPUT_PIN)
 
-	go func() {
-		for {
-			pin, value := watcher.Watch()
-			fmt.Printf("%d : read %d from gpio %d\n", time.Now().Unix(), value, pin)
-		}
-	}()
+	for {
+		pin, value := watcher.Watch()
+		fmt.Printf("%s : (epoch %d) : read %d from gpio %d\n", time.Now(), time.Now().Unix(), value, pin)
+	}
 }
