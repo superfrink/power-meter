@@ -35,4 +35,4 @@ Generated files:
 
 `power-meter.out` - executable for the OS the build is run on.
 
-`power-meter.pi` - executable for Linux on ARM 7.
+`power-meter.pi` - executable for Linux on ARM 6.
