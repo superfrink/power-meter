@@ -11,6 +11,21 @@ Input
 
 Reads from GPIO 27 which is hardware pin 13 on a Raspberry Pi B+.  Be sure to check which hardware pin GPIO 27 maps to on your system or to change the GPIO pin.
 
+Output
+----------------
+
+Read the number of pulses since the program started by connecting to TCP port 9001.
+
+```
+pi@raspberrypi ~ $ while [ 0 ] ; do echo | nc localhost 9001 ; echo ; sleep 60 ; done
+10794
+10801
+10807
+10814
+```
+
+This allows you to read the value from a remote server and use something like RRDtool to graph power usage.
+
 
 Wiring
 ----------------
