@@ -26,6 +26,8 @@ pi@raspberrypi ~ $ while [ 0 ] ; do echo | nc localhost 9001 ; echo ; sleep 60 ;
 
 This allows you to read the value from a remote server and use something like RRDtool to graph power usage.
 
+![Example Power Graph](https://raw.githubusercontent.com/superfrink/power-meter/master/doc/example-power-graph.png)
+
 
 Wiring
 ----------------
