@@ -33,7 +33,8 @@ Wiring
 ----------------
 
 Schematic:
-FIXME
+
+![Wiring Schematic](https://raw.githubusercontent.com/superfrink/power-meter/master/doc/schematic.png)
 
 1. Supply 3.3 V from a Raspberry Pi's GPIO pins to the meter.
 2. Use a 1k Ohm resistor on the input GPIO pin to limit current.
