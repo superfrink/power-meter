@@ -54,3 +54,11 @@ Generated files:
 `power-meter.out` - executable for the OS the build is run on.
 
 `power-meter.pi` - executable for Linux on ARM 6.
+
+
+Starting At Boot
+----------------
+
+To start the power monitor at boot on Rasbian you can add the following to `/etc/rc.local` (before the `exit 0` line):
+
+`/path/to/power-meter.pi > /dev/null &`
