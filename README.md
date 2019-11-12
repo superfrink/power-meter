@@ -38,7 +38,7 @@ Schematic:
 
 1. Supply 3.3 V from a Raspberry Pi's GPIO pins to the meter.
 2. Use a 1k Ohm resistor on the input GPIO pin to limit current.
-3. Use a 10k Ohm pulldown resistor on the input pin (after the 1k Ohm resistor).
+3. Use a 10k Ohm pulldown resistor on the input pin (connected on the power meter side of the 1k Ohm resistor).
 4. Wire the meter to the GPIO input pin.
 
 
